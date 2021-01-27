@@ -1,0 +1,86 @@
+home
+
+Howdy!
+My name is kyle?
+I am a sophomore at Texas A&M University seeking a dual major in computer science and applied mathematics. I am a creative problem solver and enjoy working with others to create solutions to problems we face as students. Currently, 
+I am interning with Chevron to implement a cloud based solution to subsurface data storing and querying under OSDU guidelines. I am always seeking connections in the computer science field to further develop and refine my technical and business skills.
+
+Work experience
+Chevron: Software Engineering Intern
+Summer 2021
+Coming soon…
+
+Chevron: Software Engineering Intern
+Summer 2020
+I currently work as a software engineering intern within Chevron's subsurface platform team where I am helping contribute to an ongoing project of migrating internal workflows and mass data storage to the Azure cloud in compliance with and contributing to the Open Subsurface Data Universe (OSDU). I am working with a variety of tools including C#, Angular, PowerBI, and various Azure features to contribute to the full stack development.
+•	Development of cloud based data manager of subsurface data
+•	Contributed code in front end, back end, and data analytics aspects
+•	Also created PowerBI report to visualize data that is in the service
+•	Final products will be available to Chevron subsurface analysts
+•	Tools include Azure stack, C#, Angular, PowerBI, Agile, and more
+
+
+British Petroleum: Project Intern
+August 2018
+I had the opportunity to shadow BP's High Performance Computing Team and accept a challenge to code solutions to 3 real problems faced by BP while trying to collect data in the ocean. I wrote programs to sort data, predict resources needed, and increase efficiency in both Java and Python. These programs were successfully presented to a BP engineer for feedback.
+
+Baker Hughes: Observational Internship
+June 2017
+This internship provided insight into the oilfield and energy industry. This experience allowed me to tour research and design facilities throughout Houston that were testing cutting edge technology for drilling and extracting oil such as fluid flow simulations and 3D printing with metal welding. In addition, I was allowed to see some of the same technology beta tested on an experimental drilling rig in Tulsa, Oklahoma.
+
+projects
+BTHOspam
+Hackathon plus continued development
+Served as a co-manager helping to lead the development of a project called BTHOspam. This project was born from one of Texas A&M's hackathon, HowdyHack, winning the Best Aggie Hack. As a team of four, in 24 hours we produced a python based GUI that generated XML files based on a user's preferences. This file would then be uploaded to Gmail to filter both existing and incoming emails. BTHOspam was developed throughout Fall of 2019 as an Aggie Coding Club project with goals of creating a cloud based web app, but was cut short due Corona virus.
+•	Awarded Best Aggie Hack at TAMU hackathon
+•	Python GUI to write personalized XML files to filter university mass email spam 
+•	Led 10 person team to finish out development for public release
+•	Project has been paused since COVID-19
+
+
+Programming Languages: Java Project on Merkle Trees
+-	Group with myself and a partner
+-	Simulating file updates using hierarchical hashing tree
+-	Inheritance, abstraction, collections, generics
+
+Learning DS&A
+From one of my courses
+-	Project0: vector practice
+-	Project1: linked lists, templates, arrays
+-	Project2: augmented binary search tree
+-	Project3: splay trees (personal fav- simulates autocompletion by suggesting frequently used words that begin with given substring)
+-	Project4: min and max heaps
+
+Genomics Program
+Also from intro c++ course
+-	Supports .fasta and .prot_table file formats
+-	Counts base pairs
+-	Calculates GC content
+-	Longest homopolymer
+-	Statistics on genes and intergenic regions
+-	Coding fraction
+-	Gene base pair and amino acid breakdown 
+
+
+Learning C++: Command Line Utilities 
+From my first college c++ course
+-	Calendar tool
+-	Custom grep
+-	Estimating Pi
+-	Line, word, and character count
+-	Making change in a vending machine
+-	Add, multiply, differentiate, and solve basic polynomials
+
+Service
+Counselor, Impact Retreat                                                                  February 2020 - Present
+•	Serve as a camp leader for incoming freshman and transfer students
+•	Connect students to local churches and ministries
+•	Mentor smaller group of 10 students throughout their first fall semester at Texas A&M
+MSC Freshman in Service and Hosting:                                     September 2019 - May 2020
+•	Responsible for organizing Kyle Field Day, 1500+ participants
+•	Recruit 50+ nonprofits and service programs to showcase
+•	Participate in 20+ community service hours
+
+
+Languages:	Intermediate: C++, C#, Python, Java  |  Basic: HTML, CSS, Javascript
+
