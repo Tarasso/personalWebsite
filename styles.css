@@ -31,7 +31,7 @@ a:link {
     text-decoration: underline;
 }
 
-ul {
+ul, li, div, a, section, figure, nav {
     padding: 0;
     margin: 0;
 }
@@ -40,3 +40,21 @@ ul {
     float: left;
     padding-right: 8px;
 }
+
+.kyle-circle-image {
+    height: 360px;
+    width: 360px;
+    background-image: url("resources/kyle.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+nav {
+    margin-bottom: 60px;
+}
+
+nav li {
+    display: inline;
+}
+
