@@ -38,7 +38,7 @@ ul {
     padding-left: 15px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .h1, .h2, .h3 {
     margin-bottom: .25em;
     line-height: 1.2em;
 }
@@ -48,13 +48,13 @@ h1 {
     margin-bottom: 28px;
 }
 
-h2 {
+h2, .h2 {
     font-size: 28px;
     margin-bottom: 24px;
     color: #a9a9a9;
 }
 
-h3 {
+h3, .h3 {
     font-size: 24px;
     font-weight: normal;
 }
@@ -67,15 +67,17 @@ hr {
     margin-bottom: 24px;
 }
 
-a {
+a, .underline {
+    display: inline-block;
     font-weight: bold;
     text-decoration: none;
     position: relative;
     transition: all .175s ease-in;
+    white-space: nowrap;
 
 }
 
-a:after {
+a:after{
     height: 1px;
     width: 100%;
     background-color: currentColor;
@@ -130,6 +132,18 @@ a:hover {
     font-size: 32px;
 }
 
+.scale-down {
+    width: 400px;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.no-underline::after {
+    display: none;
+}
+
 .logo {
     width: 100px;
 }
@@ -151,14 +165,43 @@ a:hover {
     border-width: 8px;
 }
 
+.icon {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+icon svg {
+    fill: white;
+    transition: all .3s ease-in;
+    height: 32px;
+    width: 32px;
+}
+
+icon:hover svg, icon:hover svg path {
+    fill: #60322E;
+    stroke: #60322E;
+}
+
+.resume {
+    text-align: left;
+    font-size: 28px;
+}
+
 nav {
     margin-bottom: 60px;
     margin-top: 16px;
 }
 
+nav ul {
+    padding-left: 0px;
+}
+
 nav li {
     display: inline-block;
     margin-right: 16px;
+    font-size: 18px;
 }
 
 
