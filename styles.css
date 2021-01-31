@@ -1,6 +1,9 @@
 /*
 COLOR PALETTE
 DARK GRAY: 181818
+LIGHT GRAY: 404040
+MAROON: 60322E
+PRUSSIAN BLUE: 143A52
 WHITE: FFFFFF
 */
 
@@ -21,40 +24,142 @@ body {
     width: 85%;
 }
 
+ul, li, div, a, section, figure, nav, h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+}
+
 * {
     color: #FFFFFF;
     text-decoration: none;
 }
 
-a:link {
-    font-weight: bold;
-    text-decoration: underline;
+ul {
+    padding-left: 15px;
 }
 
-ul, li, div, a, section, figure, nav {
-    padding: 0;
-    margin: 0;
+h1, h2, h3 {
+    margin-bottom: .25em;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 28px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: #a9a9a9;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+p {
+    line-height: 1.3em;
+}
+
+hr {
+    margin-bottom: 24px;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: all .175s ease-in;
+
+}
+
+a:after {
+    height: 1px;
+    width: 100%;
+    background-color: currentColor;
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+}
+
+a:hover {
+    color: #60322E;
+}
+
+.font-regular {
+    font-weight: normal;
+}
+
+.large-text {
+    font-size: 72px;
+}
+
+.mb-0.mb-0 {
+    margin-bottom: 0px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.flex-container > :not(:last-child) {
+    margin-right: 16px;
+}
+
+.even-spacing > *{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.align-items-center {
+    
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.sub-head {
+    font-size: 32px;
 }
 
 .logo {
-    float: left;
-    padding-right: 8px;
+    width: 100px;
+}
+
+.service-logo {
+    width: 140px;
+    margin-top: 5px;
 }
 
 .kyle-circle-image {
     height: 360px;
-    width: 360px;
+    min-width: 360px;
     background-image: url("resources/kyle.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 50%;
+    border-style: solid;
+    border-color: #404040;
+    border-width: 8px;
 }
 
 nav {
     margin-bottom: 60px;
+    margin-top: 16px;
 }
 
 nav li {
-    display: inline;
+    display: inline-block;
+    margin-right: 16px;
 }
+
+
 
