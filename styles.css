@@ -9,6 +9,7 @@ WHITE: FFFFFF
 
 :root {
     --pop: #a5564f;
+    --background: #272727;
 }
 
 html {
@@ -18,8 +19,9 @@ html {
 }
 
 body {
-    background-repeat: round;
-    background-image: linear-gradient(#282828,#181818,#282828);
+    /* background-repeat: round;
+    background-image: linear-gradient(#282828,#181818,#282828); */
+    background-color: var(--background);
     margin: 0 auto;
     padding: 0;
     font-family: 'Courier Prime', monospace;
@@ -93,7 +95,7 @@ a:after{
 }
 
 a:hover {
-    color: #60322E;
+    color: var(--pop);
 }
 
 .font-regular {
@@ -184,8 +186,8 @@ icon svg {
 }
 
 icon:hover svg, icon:hover svg path {
-    fill: #60322E;
-    stroke: #60322E;
+    fill: var(--pop);
+    stroke: var(--pop);
 }
 
 .resume {
@@ -220,10 +222,16 @@ nav li {
 
 .button {
     color: var(--pop);
+    display: inline-block;
     padding: 8px;
     border-style: solid;
     border-color: white;
     border-width: 2px;
     border-radius: 12%;
+}
+
+.button:hover {
+    background-color: white;
+    transition: all .175 ease-in;
 }
 
