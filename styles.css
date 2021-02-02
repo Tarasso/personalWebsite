@@ -10,6 +10,15 @@ WHITE: FFFFFF
 :root {
     --pop: #a5564f;
     --background: #272727;
+    --text-color: white;
+    --text-color-other: #a9a9a9; 
+}
+
+[data-theme="light"] {
+    --pop: #a5564f;
+    --background: white;
+    --text-color: black;
+    --text-color-other: #424242e8; 
 }
 
 html {
@@ -36,7 +45,7 @@ ul, li, div, a, section, figure, nav, h1, h2, h3, h4 {
 }
 
 * {
-    color: #FFFFFF;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -57,7 +66,7 @@ h1 {
 h2, .h2 {
     font-size: 28px;
     margin-bottom: 24px;
-    color: #a9a9a9;
+    color: var(--text-color-other);
 }
 
 h3, .h3 {
@@ -179,7 +188,7 @@ a:hover {
 }
 
 icon svg {
-    fill: white;
+    fill: var(--text-color);
     transition: all .3s ease-in;
     height: 32px;
     width: 32px;
@@ -225,13 +234,73 @@ nav li {
     display: inline-block;
     padding: 8px;
     border-style: solid;
-    border-color: white;
+    border-color: var(--text-color);
     border-width: 2px;
     border-radius: 12%;
 }
 
 .button:hover {
-    background-color: white;
+    background-color: var(--text-color);
     transition: all .175 ease-in;
 }
 
+/* Code from  https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8*/
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+.theme-switch-wrapper em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .theme-switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: #66bb6a;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
