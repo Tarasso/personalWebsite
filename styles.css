@@ -226,22 +226,32 @@ nav li {
 }
 
 .card {
-    width: 50%;
+    width: 45%;
+    margin-bottom: 24px;
+    margin-right: 12px;
+    border-style: solid;
+    border-color: var(--text-color);
+}
+
+.card ul {
+    margin-bottom: 24px;
 }
 
 .button {
-    color: var(--pop);
+    color: var(--text-color);
     display: inline-block;
     padding: 8px;
     border-style: solid;
     border-color: var(--text-color);
     border-width: 2px;
-    border-radius: 12%;
+    display:inline-block;
+    text-align:center;
+    transition: all 0.2s;
 }
 
 .button:hover {
-    background-color: var(--text-color);
-    transition: all .175 ease-in;
+    background-color: var(--pop);
+    color: var(--text-color);
 }
 
 /* Code from  https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8*/
