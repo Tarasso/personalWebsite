@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="./scripts.js"></script>
     <title>Service</title>
 </head>
 <body>
@@ -14,11 +15,12 @@
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="qualifications.html">Qualifications</a></li>
             <li><a href="service.html">Service</a></li>
+            <li><button id="switch" onclick="toggleTheme()">Dark/Light Mode</button></li>
         </ul>
     </nav>
     <h1>Service</h1>
     <section class="flex-container align-items-start">
-        <img class="service-logo" src="resources/impact.png">
+        <img class="service-logo" id="impact" src="resources/impact.png">
         <div>
             <h2><a href="https://impactretreat.com/" target="_blank">Impact Retreat</a></h2>
             <h3>Camper | Counselor | Co-chair</h3>
@@ -26,7 +28,7 @@
         </div>
     </section>
     <section class="flex-container align-items-start">
-        <img class="service-logo" src="resources/fish.png">
+        <img class="service-logo" id="fish" src="resources/fish.png">
         <div>
             <h2><a href="https://fish.tamu.edu/" target="_blank">MSC Freshman in Service and Hosting</a></h2>
             <h3>Member</h3>

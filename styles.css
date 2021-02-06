@@ -7,18 +7,22 @@ PRUSSIAN BLUE: 143A52
 WHITE: FFFFFF
 */
 
-:root {
-    --pop: #a5564f;
-    --background: #272727;
-    --text-color: white;
-    --text-color-other: #a9a9a9; 
-}
-
-[data-theme="light"] {
+.theme-light {
     --pop: #a5564f;
     --background: white;
     --text-color: black;
-    --text-color-other: #424242e8; 
+    --text-color-other: #424242e8;
+    --fish: "resources/mscFishBlack.png";
+    --impact: "resources/impactBlack.png";
+}
+
+.theme-dark {
+    --pop: #a5564f;
+    --background: #272727;
+    --text-color: white;
+    --text-color-other: #a9a9a9;
+    --fish: "resources/fish.png";
+    --impact: "resources/impact.png"; 
 }
 
 html {
@@ -66,7 +70,7 @@ h1 {
 h2, .h2 {
     font-size: 28px;
     margin-bottom: 24px;
-    color: var(--text-color-other);
+    color: var(--pop);
 }
 
 h3, .h3 {
@@ -74,7 +78,7 @@ h3, .h3 {
     font-weight: normal;
 }
 
-p {
+p, .p {
     line-height: 1.3em;
 }
 
@@ -95,7 +99,7 @@ a, .underline {
 a:after{
     height: 1px;
     width: 100%;
-    background-color: currentColor;
+    background-color: var(--pop);
     position: absolute;
     content: "";
     display: block;
@@ -117,6 +121,14 @@ a:hover {
 
 .mb-0.mb-0 {
     margin-bottom: 0px;
+}
+
+.light-color {
+    color: var(--text-color-other);
+}
+
+.pop-color {
+    color: var(--pop);
 }
 
 .flex-container {
@@ -149,14 +161,47 @@ a:hover {
 
 .scale-down {
     width: 400px;
+    margin-top: 18px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.text-center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.container {
+    text-align: center;
 }
 
 .no-underline {
     text-decoration: none;
 }
 
+.flex-grow {
+    flex-grow: 1;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
 .no-underline::after {
     display: none;
+}
+
+.margin-bot {
+    margin-bottom: 28px;
 }
 
 .logo {
@@ -176,7 +221,7 @@ a:hover {
     background-position: center;
     border-radius: 50%;
     border-style: solid;
-    border-color: #404040;
+    border-color: var(--pop);
     border-width: 8px;
 }
 
@@ -189,6 +234,7 @@ a:hover {
 
 icon svg {
     fill: var(--text-color);
+    stroke: var(--text-color);
     transition: all .3s ease-in;
     height: 32px;
     width: 32px;
@@ -219,18 +265,32 @@ nav li {
     font-size: 18px;
 }
 
+nav:last-child {
+    /* margin-left: 48px; */
+}
+
 .card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.card {
+.card-45 {
     width: 45%;
     margin-bottom: 24px;
     margin-right: 12px;
     border-style: solid;
     border-color: var(--text-color);
+    text-align: justify;
+}
+
+.card-30 {
+    width: 45%;
+    margin-bottom: 24px;
+    margin-right: 12px;
+    border-style: solid;
+    border-color: var(--text-color);
+    text-align: justify;
 }
 
 .card ul {
@@ -254,63 +314,55 @@ nav li {
     color: var(--text-color);
 }
 
-/* Code from  https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8*/
+#switch {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin-left: 48px;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    color:var(--text-color);
+    background-color: var(--background);
+    text-align:center;
+    transition: all 0.2s;
 
-.theme-switch-wrapper {
-    display: flex;
-    align-items: center;
-  }
+}
 
-.theme-switch-wrapper em {
+#switch:hover{
+    color: var(--text-color-other);
+    background-color: var(--pop);
+}
+
+.progress-bar {
+    color: var(--text-color-other);
+    background-color: var(--text-color-other);
+    border-radius: 8px;
+    padding: 2px;
+    width: 100%;
+}
+
+.progress-bar > div {
+    background-color: var(--pop);
+    color: var(--pop);
+    height: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.progress-bar span {
     margin-left: 10px;
-    font-size: 1rem;
-  }
+}
 
-  .theme-switch {
-    display: inline-block;
-    height: 34px;
-    position: relative;
-    width: 60px;
-  }
+.progress-bar-title {
+    margin-bottom: 4px;
+}
+
+.note {
+    font-size: 16px;
+    color: var(--text-color-other);
+    margin-top: 4px;
+}
+
+
   
-  .theme-switch input {
-    display:none;
-  }
-  
-  .slider {
-    background-color: #ccc;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    background-color: #fff;
-    bottom: 4px;
-    content: "";
-    height: 26px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
-    width: 26px;
-  }
-  
-  input:checked + .slider {
-    background-color: #66bb6a;
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(26px);
-  }
-  
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
