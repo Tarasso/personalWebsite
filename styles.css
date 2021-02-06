@@ -141,6 +141,21 @@ a:hover {
     margin-right: 16px;
 }
 
+.vertical {
+    flex-direction: column;
+}
+
+.classes {
+    /* background: var(--text-color-other); */
+    margin: 4px;
+    border-radius: 13px;
+}
+
+.classes li {
+    margin-bottom: 4px;
+    color: var(--text-color-other);
+}
+
 .even-spacing > *{
     flex-basis: 0;
     flex-grow: 1;
@@ -190,6 +205,10 @@ a:hover {
 
 .justify {
     text-align: justify;
+}
+
+.adjust-width {
+    width: 156%;
 }
 
 .align-self-center {
