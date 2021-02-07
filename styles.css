@@ -1,28 +1,20 @@
-/*
-COLOR PALETTE
-DARK GRAY: 181818
-LIGHT GRAY: 404040
-MAROON: 60322E
-PRUSSIAN BLUE: 143A52
-WHITE: FFFFFF
-*/
 
-.theme-light {
+/* .theme-light {
     --pop: #a5564f;
     --background: white;
     --text-color: black;
     --text-color-other: #424242e8;
     --fish: "resources/mscFishBlack.png";
     --impact: "resources/impactBlack.png";
-}
+} */
 
-.theme-dark {
+:root {
     --pop: #a5564f;
     --background: #272727;
     --text-color: #DDD;
     --text-color-other: #a9a9a9;
-    --fish: "resources/fish.png";
-    --impact: "resources/impact.png"; 
+    /* --fish: "resources/fish.png";
+    --impact: "resources/impact.png";  */
 }
 
 html {
