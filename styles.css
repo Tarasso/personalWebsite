@@ -19,7 +19,7 @@ WHITE: FFFFFF
 .theme-dark {
     --pop: #a5564f;
     --background: #272727;
-    --text-color: white;
+    --text-color: #DDD;
     --text-color-other: #a9a9a9;
     --fish: "resources/fish.png";
     --impact: "resources/impact.png"; 
@@ -37,7 +37,7 @@ body {
     background-color: var(--background);
     margin: 0 auto;
     padding: 0;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 15px;
     max-width: 960px;
     width: 85%;
@@ -79,7 +79,7 @@ h3, .h3 {
 }
 
 p, .p {
-    line-height: 1.3em;
+    line-height: 1.45em;
     margin-bottom: 8px;
 }
 
@@ -99,6 +99,7 @@ a, .underline {
 
 a:after{
     height: 1px;
+    border-radius: 5px;
     width: 100%;
     background-color: var(--pop);
     position: absolute;
@@ -209,7 +210,7 @@ a:hover {
 }
 
 .adjust-width {
-    width: 156%;
+    width: 123%;
 }
 
 .align-self-center {
@@ -233,6 +234,10 @@ a:hover {
     margin-top: 5px;
 }
 
+.media-logo {
+    margin-right: 8px;
+}
+
 .kyle-circle-image {
     height: 360px;
     min-width: 360px;
@@ -246,8 +251,8 @@ a:hover {
 }
 
 .icon {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     margin-right: 12px;
 }
@@ -282,11 +287,9 @@ nav ul {
 nav li {
     display: inline-block;
     margin-right: 16px;
-    font-size: 18px;
-}
-
-nav:last-child {
-    /* margin-left: 48px; */
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .card-container {
@@ -355,19 +358,21 @@ nav:last-child {
 }
 
 .progress-bar {
-    color: var(--text-color-other);
-    background-color: var(--text-color-other);
-    border-radius: 8px;
-    padding: 2px;
+    color: var(--text-color);
+    background-color: var(--text-color);
+    border-radius: 13px;
+    padding: 0px;
     width: 100%;
+    margin-bottom: 8px;
 }
 
 .progress-bar > div {
     background-color: var(--pop);
     color: var(--pop);
-    height: 15px;
+    height: 22px;
     border-radius: 10px;
     text-align: center;
+    font-size: 15px;
 }
 
 .progress-bar span {
@@ -393,4 +398,11 @@ nav:last-child {
 .project-container {
     margin-bottom: 32px;
 }
-  
+
+.service-title {
+    margin-bottom: 12px;
+}
+
+.service-sub {
+    margin-bottom: 12px;
+}
