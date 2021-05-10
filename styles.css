@@ -202,7 +202,11 @@ a:hover {
 }
 
 .adjust-width {
-    width: 123%;
+    width: 90%;
+}
+
+.shrink-width {
+    width: 87%;
 }
 
 .align-self-center {
