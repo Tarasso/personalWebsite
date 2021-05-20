@@ -131,6 +131,15 @@ a:hover {
     margin-bottom: 16px;
 }
 
+@media screen and (max-width: 1000px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .center-if-narrow {
+        text-align: center;
+    }
+}
+
 .flex-container > :not(:last-child) {
     margin-right: 16px;
 }
