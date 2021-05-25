@@ -415,3 +415,7 @@ nav li {
 .service-sub {
     margin-bottom: 12px;
 }
+
+.float-left {
+    float: left;
+}
